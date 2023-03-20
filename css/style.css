@@ -1,5 +1,192 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: local('Gilroy Medium'), local('Gilroy-Medium'),
+        url(/fonts/gilroy_medium/Gilroy-Medium.woff2) format('woff2'),
+        url(/fonts/gilroy_medium/Gilroy-Medium.woff) format('woff'),
+        url(/fonts/gilroy_medium/Gilroy-Medium.ttf) format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: local('Gilroy Bold'), local('Gilroy-Bold'),
+        url(/fonts/gilroy_bold/Gilroy-Bold.woff2) format('woff2'),
+        url(/fonts/gilroy_bold/Gilroy-Bold.woff) format('woff'),
+        url(/fonts/gilroy_bold/Gilroy-Bold.ttf) format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
 }
 
+.center {
+    max-width: 943.61px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+body {
+    font-family: Gilroy, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    color: #070707;
+    font-style: normal;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.header_menu_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 32.99px auto;
+}
+
+.header_menu_list_link {
+    font-weight: 700;
+    color: #828282;
+}
+
+.link1{
+    color: #070707;
+}
+
+hr {
+    margin-bottom: 39.69px;
+}
+
+.header_content {}
+
+.header_content_txt {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 49.67px;
+}
+
+.header_title {
+    max-width: 123.51px;
+    width: 100%;
+    font-size: 47.3392px;
+line-height: 59px;
+}
+
+.header_txt {
+    max-width: 155.65px;
+    width: 100%;
+}
+
+.lang_nav {
+    transform: rotate(-90deg);
+}
+
+.lang_change_link_RU,.lang_change_link_ENG {
+    font-size: 16px;
+line-height: 20px;
+font-weight: 700;
+}
+
+.lang_change_link_RU {
+    color: #828282;
+}
+
+.lang_change_link_ENG {
+color: #000000
+}
+
+.header_content_img {
+    background: url(/img/header-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 387px;
+    width: 943.61px;
+    margin-bottom: 104.06px;
+}
+
+.main-content {}
+
+.about_me_wrp {
+    background: #F6F6F6;
+    padding: 120.05px 0 105px 0;
+}
+
+.about_me_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about_me_title {
+    font-size: 34px;
+line-height: 42px;
+text-align: center;
+margin-bottom: 17.69px;
+font-weight: 700;
+height: 43.05px;
+}
+
+.about_me_text {
+    font-size: 18px;
+line-height: 22px;
+text-align: center;
+margin-bottom: 45px;
+max-width: 485px;
+width: 100%;
+}
+
+.about_me_text:nth-child(4) {
+    margin-bottom: 0;
+}
+
+.skills {
+    padding: 91px 0 110.06px 0;
+}
+
+.skills_text {}
+
+.skills_text_title {
+    font-size: 34px;
+line-height: 42px;
+text-align: center;
+font-weight: 700;
+margin-bottom: 69.1px;
+}
+
+.skills_text_txt {
+    font-size: 18px;
+line-height: 22px;
+text-align: center;
+margin-bottom: 83.49px;
+}
+
+.skills_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skills_list_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills_icon {
+    margin-bottom: 24.21px;
+}
+
+.skills_icon_txt {
+    margin-bottom: 40.41px;
+}
