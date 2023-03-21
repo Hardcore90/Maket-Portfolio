@@ -1,194 +1,344 @@
 @font-face {
-    font-family: 'Gilroy';
-    src: local('Gilroy Medium'), local('Gilroy-Medium'),
-        url('../fonts/gilroy_medium/Gilroy-Medium.woff2') format('woff2'),
-        url('../fonts/gilroy_medium/Gilroy-Medium.woff') format('woff'),
-        url('../fonts/gilroy_medium/Gilroy-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
+  font-family: "Gilroy";
+  src: local("Gilroy Medium"), local("Gilroy-Medium"),
+    url("../fonts/gilroy_medium/Gilroy-Medium.woff2") format("woff2"),
+    url("../fonts/gilroy_medium/Gilroy-Medium.woff") format("woff"),
+    url("../fonts/gilroy_medium/Gilroy-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: local('Gilroy Bold'), local('Gilroy-Bold'),
-        url('../fonts/gilroy_bold/Gilroy-Bold.woff2') format('woff2'),
-        url('../fonts/gilroy_bold/Gilroy-Bold.woff') format('woff'),
-        url('../fonts/gilroy_bold/Gilroy-Bold.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
+  font-family: "Gilroy";
+  src: local("Gilroy Bold"), local("Gilroy-Bold"),
+    url("../fonts/gilroy_bold/Gilroy-Bold.woff2") format("woff2"),
+    url("../fonts/gilroy_bold/Gilroy-Bold.woff") format("woff"),
+    url("../fonts/gilroy_bold/Gilroy-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
 }
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .center {
-    max-width: 943.61px;
-    width: 100%;
-    margin: 0 auto;
+  max-width: 943.61px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 body {
-    font-family: Gilroy, Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    line-height: 22px;
-    color: #070707;
-    font-style: normal;
-    font-weight: 500;
+  font-family: Gilroy, Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  color: #070707;
+  font-style: normal;
+  font-weight: 500;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 .header_menu_list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 32.99px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 32.99px auto;
 }
 
 .header_menu_list_link {
-    font-weight: 700;
-    color: #828282;
+  font-weight: 700;
+  color: #828282;
 }
 
-.link1{
-    color: #070707;
+.header_menu_list_link:hover {
+  opacity: 0.7;
+}
+
+.header_menu_list_link:active {
+  color: #070707;
+}
+
+.link1 {
+  color: #070707;
+}
+
+.link1:active {
+  color: #828282;
 }
 
 hr {
-    margin-bottom: 39.69px;
+  margin-bottom: 39.69px;
 }
 
-.header_content {}
-
 .header_content_txt {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin-bottom: 49.67px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 49.67px;
 }
 
 .header_title {
-    max-width: 123.51px;
-    width: 100%;
-    font-size: 47.3392px;
-line-height: 59px;
+  max-width: 123.51px;
+  width: 100%;
+  font-size: 47.3392px;
+  line-height: 59px;
 }
 
 .header_txt {
-    max-width: 155.65px;
-    width: 100%;
+  max-width: 155.65px;
+  width: 100%;
 }
 
 .lang_nav {
-    transform: rotate(-90deg) translate(24px, 20px);;
-    
+  transform: rotate(-90deg) translate(24px, 20px);
 }
 
-.lang_change_link_RU,.lang_change_link_ENG {
-    font-size: 16px;
-line-height: 20px;
-font-weight: 700;
+.lang_change_link_RU,
+.lang_change_link_ENG {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
 }
 
 .lang_change_link_RU {
-    color: #828282;
+  color: #828282;
+}
+
+.lang_change_link_RU:hover,
+.lang_change_link_ENG:hover {
+  opacity: 0.7;
+}
+
+.lang_change_link_RU:active {
+  color: #070707;
 }
 
 .lang_change_link_ENG {
-color: #000000
+  color: #000000;
+}
+
+.lang_change_link_ENG:active {
+  color: #828282;
 }
 
 .header_content_img {
-    background-image: url(../img/header-img.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 387px;
-    max-width: 943.61px;
-    width: 100%;
-    margin-bottom: 104.06px;
+  background-image: url(../img/header-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 387px;
+  max-width: 943.61px;
+  width: 100%;
+  margin-bottom: 104.06px;
 }
 
-.main-content {}
-
 .about_me_wrp {
-    background: #F6F6F6;
-    padding: 120.05px 0 105px 0;
+  background: #f6f6f6;
+  padding: 120.05px 0 105px 0;
 }
 
 .about_me_content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .about_me_title {
-    font-size: 34px;
-line-height: 42px;
-text-align: center;
-margin-bottom: 17.69px;
-font-weight: 700;
-height: 43.05px;
+  font-size: 34px;
+  line-height: 42px;
+  text-align: center;
+  margin-bottom: 17.69px;
+  font-weight: 700;
+  height: 43.05px;
 }
 
 .about_me_text {
-    font-size: 18px;
-line-height: 22px;
-text-align: center;
-margin-bottom: 45px;
-max-width: 485px;
-width: 100%;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  margin-bottom: 45px;
+  max-width: 485px;
+  width: 100%;
 }
 
 .about_me_text:nth-child(4) {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .skills {
-    padding: 91px 0 110.06px 0;
+  padding: 91px 0 110.06px 0;
 }
 
-.skills_text {}
-
 .skills_text_title {
-    font-size: 34px;
-line-height: 42px;
-text-align: center;
-font-weight: 700;
-margin-bottom: 69.1px;
+  font-size: 34px;
+  line-height: 42px;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 69.1px;
 }
 
 .skills_text_txt {
-    font-size: 18px;
-line-height: 22px;
-text-align: center;
-margin-bottom: 83.49px;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  margin-bottom: 83.49px;
 }
 
 .skills_list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .skills_list_item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .skills_icon {
-    margin-bottom: 24.21px;
+  margin-bottom: 24.21px;
 }
 
 .skills_icon_txt {
-    margin-bottom: 40.41px;
+  margin-bottom: 40.41px;
+}
+
+.portfolio_wrp {
+  background: #f6f6f6;
+  padding: 112.93px 0 104px 0;
+}
+
+.portfolio_content {
+  text-align: center;
+}
+
+.portfolio_content_title {
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 42px;
+  margin-bottom: 64px;
+}
+
+.portfolio_content_img {
+  max-width: 936.24px;
+  width: 100%;
+  margin-bottom: 44.88px;
+}
+
+.portfolio_content_link {
+  display: block;
+  margin-bottom: 107px;
+  text-decoration: underline;
+  font-size: 18px;
+  line-height: 22px;
+  color: #070707;
+}
+
+.portfolio_content_link:nth-child(7) {
+  margin-bottom: 0;
+}
+
+.portfolio_content_link:hover {
+  opacity: 0.7;
+}
+
+.portfolio_content_link:active {
+  color: #828282;
+}
+
+.contacts_wrp {
+  padding: 114px 0 124px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacts_txt_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contacts_title {
+  font-size: 34px;
+  line-height: 42px;
+  font-weight: 700;
+  margin-bottom: 37px;
+}
+
+.contacts-txt {
+  font-size: 18px;
+  line-height: 22px;
+  max-width: 275px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 38px;
+}
+
+.contacts_btn {
+  width: 180px;
+  height: 42px;
+  background: #070707;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 22px;
+  border-radius: 20px;
+  margin-bottom: 85.78px;
+}
+
+.contacts_btn:hover {
+  background-color: #f6f6f6;
+  color: #070707;
+}
+
+.contacts_btn:active {
+  background-color: #070707;
+  color: #f6f6f6;
+}
+
+.contacts_icon_list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 61px;
+  margin-bottom: 45.76px;
+}
+
+.contacts_icon_list svg:hover {
+  opacity: 0.7;
+}
+
+.contacts_icon_list svg:active {
+  fill: #828282;
+}
+
+.contacts_bottom_txt {
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #828282;
+  max-width: 243px;
+  width: 100%;
+}
+
+.floating-button {
+  position: fixed; /* фиксируем позицию */
+  bottom: 20px; /* расстояние от верхней границы экрана */
+  right: 20px; /* расстояние от правой границы экрана */
+}
+
+#arrow img {
+  display: block;
+  width: 60px;
+  height: 50px;
 }
