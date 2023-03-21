@@ -1,9 +1,9 @@
 @font-face {
     font-family: 'Gilroy';
     src: local('Gilroy Medium'), local('Gilroy-Medium'),
-        url(/fonts/gilroy_medium/Gilroy-Medium.woff2) format('woff2'),
-        url(/fonts/gilroy_medium/Gilroy-Medium.woff) format('woff'),
-        url(/fonts/gilroy_medium/Gilroy-Medium.ttf) format('truetype');
+        url('../fonts/gilroy_medium/Gilroy-Medium.woff2') format('woff2'),
+        url('../fonts/gilroy_medium/Gilroy-Medium.woff') format('woff'),
+        url('../fonts/gilroy_medium/Gilroy-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
@@ -11,9 +11,9 @@
 @font-face {
     font-family: 'Gilroy';
     src: local('Gilroy Bold'), local('Gilroy-Bold'),
-        url(/fonts/gilroy_bold/Gilroy-Bold.woff2) format('woff2'),
-        url(/fonts/gilroy_bold/Gilroy-Bold.woff) format('woff'),
-        url(/fonts/gilroy_bold/Gilroy-Bold.ttf) format('truetype');
+        url('../fonts/gilroy_bold/Gilroy-Bold.woff2') format('woff2'),
+        url('../fonts/gilroy_bold/Gilroy-Bold.woff') format('woff'),
+        url('../fonts/gilroy_bold/Gilroy-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
 }
@@ -71,7 +71,7 @@ hr {
 .header_content_txt {
     display: flex;
     justify-content: space-between;
-    align-items: end;
+    align-items: flex-end;
     margin-bottom: 49.67px;
 }
 
@@ -88,7 +88,8 @@ line-height: 59px;
 }
 
 .lang_nav {
-    transform: rotate(-90deg);
+    transform: rotate(-90deg) translate(24px, 20px);;
+    
 }
 
 .lang_change_link_RU,.lang_change_link_ENG {
@@ -106,11 +107,12 @@ color: #000000
 }
 
 .header_content_img {
-    background: url(/img/header-img.jpg);
+    background-image: url(../img/header-img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 387px;
-    width: 943.61px;
+    max-width: 943.61px;
+    width: 100%;
     margin-bottom: 104.06px;
 }
 
