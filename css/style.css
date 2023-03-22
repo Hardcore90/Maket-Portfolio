@@ -374,7 +374,7 @@ hr {
   .header_content_wrp {
     display: flex;
     justify-content: space-between;
-    padding-top: 65px;
+    padding-top: 55px;
   }
 
   .header_content_txt {
@@ -398,7 +398,7 @@ hr {
   }
 
   .header_content_img {
-    background-image: url(/img/header-img-mobile.jpg);
+    background-image: url(../img/header-img-mobile.jpg);
     height: 478px;
     margin-bottom: 83px;
   }
@@ -409,6 +409,7 @@ hr {
     height: 19px;
     align-items: center;
     position: relative;
+    bottom: -12px;
   }
 
   .burger-menu-label span::before,
