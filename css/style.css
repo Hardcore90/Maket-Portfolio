@@ -46,6 +46,14 @@ ul {
   list-style: none;
 }
 
+.burger-menu-label {
+  display: none;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
 .header_menu_list {
   display: flex;
   justify-content: space-between;
@@ -202,6 +210,7 @@ hr {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .skills_icon {
@@ -349,6 +358,7 @@ hr {
   position: fixed; /* фиксируем позицию */
   bottom: 20px; /* расстояние от верхней границы экрана */
   right: 20px; /* расстояние от правой границы экрана */
+  z-index: 1002;
 }
 
 #arrow img {
@@ -362,7 +372,99 @@ hr {
     max-width: 316px;
   }
 
-  .header_nav_menu,
+  header {
+    position: relative;
+  }
+
+  .burger-menu-label {
+    display: flex;
+    width: 33px;
+    height: 19px;
+    align-items: center;
+    position: relative;
+    top: 88px;
+    right: -282px;
+    z-index: 1002;
+  }
+
+  .burger-menu-label span::before,
+  .burger-menu-label span::after {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: inherit;
+    position: absolute;
+  }
+
+  .burger-menu-label span::before {
+    top: 0;
+  }
+
+  .burger-menu-label span::after {
+    bottom: 0;
+  }
+
+  .burger-menu-label span {
+    display: block;
+    background-color: #000000;
+    height: 4px;
+    width: 100%;
+  }
+
+  .burger-menu-label:hover span {
+    background-color: #828282;
+  }
+
+  .burger-menu-label:active span {
+    background-color: #e8e8e8;
+  }
+
+  .header_nav_menu {
+    visibility: hidden;
+    width: 100%;
+    height: 812px;
+    position: absolute;
+    background-color: #ffffff;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    /* margin: 66px 0 0 26px; */
+  }
+
+  .header_menu_list {
+    /* visibility: hidden; */
+    display: flex;
+    flex-direction: column;
+    gap: 68px;
+    margin: 82px 0 0 0;
+    align-items: flex-start;
+  }
+
+  .header_menu_list_link {
+    font-size: 34px;
+    line-height: 42px;
+    font-weight: 700;
+  }
+
+  input[type="checkbox"]:checked ~ .header_nav_menu {
+    visibility: visible;
+  }
+
+  input[type="checkbox"]:checked ~ .burger-menu-label span::before {
+    display: none;
+  }
+
+  input[type="checkbox"]:checked ~ .burger-menu-label span::after {
+    transform: rotate(-85deg);
+    top: 0px;
+  }
+
+  input[type="checkbox"]:checked ~ .burger-menu-label span {
+    transform: rotate(40deg);
+    background-color: #828282;
+  }
+
   hr {
     display: none;
   }
@@ -401,44 +503,6 @@ hr {
     background-image: url(../img/header-img-mobile.jpg);
     height: 478px;
     margin-bottom: 83px;
-  }
-
-  .burger-menu-label {
-    display: flex;
-    width: 33px;
-    height: 19px;
-    align-items: center;
-    position: relative;
-    bottom: -12px;
-  }
-
-  .burger-menu-label span::before,
-  .burger-menu-label span::after {
-    content: "";
-    display: block;
-    height: 4px;
-    width: 100%;
-    background-color: inherit;
-    position: absolute;
-  }
-
-  input[type="checkbox"] {
-    display: none;
-  }
-
-  .burger-menu-label span::before {
-    top: 0;
-  }
-
-  .burger-menu-label span::after {
-    bottom: 0;
-  }
-
-  .burger-menu-label span {
-    display: block;
-    background-color: #000000;
-    height: 4px;
-    width: 100%;
   }
 
   .about_me_wrp {
@@ -521,5 +585,11 @@ hr {
     line-height: 22px;
     max-width: 315px;
     width: 100%;
+  }
+
+  .floating-button {
+    position: fixed; /* фиксируем позицию */
+    bottom: 20px; /* расстояние от верхней границы экрана */
+    right: 25px; /* расстояние от правой границы экрана */
   }
 }
