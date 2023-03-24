@@ -82,6 +82,38 @@ input[type="checkbox"] {
   color: #828282;
 }
 
+.lang_nav_burger_menu {
+  display: none;
+}
+
+.lang_change_link_RU_burger_menu,
+.lang_change_link_ENG_burger_menu {
+  font-size: 34px;
+  line-height: 42px;
+  font-weight: 700;
+}
+
+.lang_change_link_RU_burger_menu {
+  color: #828282;
+}
+
+.lang_change_link_RU_burger_menu:hover,
+.lang_change_link_ENG_burger_menu:hover {
+  opacity: 0.7;
+}
+
+.lang_change_link_RU_burger_menu:active {
+  color: #070707;
+}
+
+.lang_change_link_ENG_burger_menu {
+  color: #000000;
+}
+
+.lang_change_link_ENG_burger_menu:active {
+  color: #828282;
+}
+
 hr {
   margin-bottom: 39.69px;
 }
@@ -426,7 +458,7 @@ hr {
     height: 812px;
     position: absolute;
     background-color: #ffffff;
-    z-index: 1000;
+    z-index: 999;
     top: 0;
     right: 0;
     /* margin: 66px 0 0 26px; */
@@ -439,12 +471,27 @@ hr {
     gap: 68px;
     margin: 82px 0 0 0;
     align-items: flex-start;
+    position: relative;
   }
 
   .header_menu_list_link {
     font-size: 34px;
     line-height: 42px;
     font-weight: 700;
+  }
+
+  input[type="checkbox"]:checked ~ .lang_nav_burger_menu {
+    display: table;
+    position: absolute;
+    bottom: 85px;
+    right: -50px;
+    transform: rotate(90deg);
+    z-index: 1059;
+  }
+
+  input[type="checkbox"]:checked ~ .lang_nav_burger_menu {
+    visibility: visible;
+    z-index: 1000;
   }
 
   input[type="checkbox"]:checked ~ .header_nav_menu {
@@ -485,10 +532,6 @@ hr {
     align-items: flex-start;
   }
 
-  .lang_nav {
-    display: none;
-  }
-
   .header_title {
     margin: 0;
     height: auto;
@@ -497,6 +540,10 @@ hr {
 
   .header_content_txt {
     margin-bottom: 40px;
+  }
+
+  .lang_nav {
+    display: none;
   }
 
   .header_content_img {
